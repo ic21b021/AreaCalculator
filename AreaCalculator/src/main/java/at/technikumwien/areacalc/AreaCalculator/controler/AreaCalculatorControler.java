@@ -15,6 +15,6 @@ public class AreaCalculatorControler {
 
     @GetMapping(path = "/circle")
     public String calcCircleArea(@RequestParam(name = "value") double value){
-        return String.valueOf(areaCalculatorService.calcCircleArea(value));
+        return String.format("%.2f", areaCalculatorService.calcCircleArea(value));
     }
 }
