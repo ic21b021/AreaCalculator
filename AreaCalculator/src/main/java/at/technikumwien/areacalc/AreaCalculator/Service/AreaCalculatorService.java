@@ -8,4 +8,8 @@ public class AreaCalculatorService {
     public double calcCircleArea(double radius){
         return Math.PI * Math.sqrt(radius);
     }
+
+    public double squareArea(double l){
+        return l * l;
+    }
 }

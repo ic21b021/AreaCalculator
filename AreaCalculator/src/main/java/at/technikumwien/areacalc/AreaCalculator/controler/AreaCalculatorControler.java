@@ -17,4 +17,9 @@ public class AreaCalculatorControler {
     public String calcCircleArea(@RequestParam(name = "value") double value){
         return String.format("%.2f", areaCalculatorService.calcCircleArea(value));
     }
+
+    @GetMapping(path = "/square")
+    public String calcSquareArea(@RequestParam(name = "value") double value){
+        return String.format("%.2f", areaCalculatorService.squareArea(value));
+    }
 }
