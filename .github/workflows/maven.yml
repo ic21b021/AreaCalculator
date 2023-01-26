@@ -30,11 +30,11 @@ jobs:
 
       # COMPILE PROJECT
     - name: Compile Project
-      run: mvn -B compile -f /home/runner/work/AreaCalculator/pom.xml
+      run: mvn -B compile -f ./home/runner/work/AreaCalculator/pom.xml
 
       # UNIT-TESTS
     - name: Run UnitTests
-      run: mvn -B test -f /home/runner/work/AreaCalculator/pom.xml
+      run: mvn -B test -f ./home/runner/work/AreaCalculator/pom.xml
 
       # INTEGRATION-TESTS
     - name: Run IntegrationTests
