@@ -30,11 +30,11 @@ jobs:
 
       # COMPILE PROJECT
     - name: Compile Project
-      run: mvn -B compile --file pom.xml
+      run: mvn -B compile --file /pom.xml
 
       # UNIT-TESTS
     - name: Run UnitTests
-      run: mvn -B test --file pom.xml
+      run: mvn -B test --file /pom.xml
 
       # INTEGRATION-TESTS
     - name: Run IntegrationTests
