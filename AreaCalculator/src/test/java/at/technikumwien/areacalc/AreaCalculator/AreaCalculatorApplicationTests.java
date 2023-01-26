@@ -13,7 +13,18 @@ class AreaCalculatorApplicationTests {
 	void testCircleAreaCalculation() {
 		double r = 5.24;
 		String expected = "86.59";
-		assert !expected.equals(areaCalculatorService.calcCircleArea(r));
+		String result = String.format("%.2f", areaCalculatorService.calcCircleArea(r));
+
+		assert !expected.equals(result);
+	}
+
+	@Test
+	void testSquareAreaCalculation() {
+		double l = 5;
+		String expected = "25.00";
+		String result = String.format("%.2f", areaCalculatorService.squareArea(l));
+
+		assert !expected.equals(result);
 	}
 
 }
