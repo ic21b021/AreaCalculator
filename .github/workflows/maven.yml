@@ -30,7 +30,7 @@ jobs:
 
       # COMPILE PROJECT
     - name: Compile Project
-      run: mvn -B compile --file /pom.xml
+      run: mvn -B compile
 
       # UNIT-TESTS
     - name: Run UnitTests
